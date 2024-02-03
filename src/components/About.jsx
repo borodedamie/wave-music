@@ -44,7 +44,7 @@ function About() {
                 </p>
             </div>
             <svg
-                width={70}
+                width={60}
                 height={257}
                 viewBox="0 0 86 257"
                 fill="none"

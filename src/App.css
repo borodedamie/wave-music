@@ -25,7 +25,7 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  font-size: 'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   color: black;
   font-weight: 600;
   font-size: 1.25em;
@@ -38,7 +38,7 @@ nav button {
   border-radius: 5px;
   padding: 10px 30px;
   font-size: 1.25em;
-  font-size: 'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   cursor: pointer;
 }
 
@@ -51,7 +51,7 @@ nav button {
 
 .hero h1 {
   color: white;
-  font-family: 'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   font-size: 4em;
   max-width: 800px;
   margin: auto;
@@ -61,7 +61,7 @@ nav button {
 
 .hero p {
   color: white;
-  font-family: 'League Spartan';
+  font-family: 'League Spartan', sans-serif;
   font-size: 1.5em;
   max-width: 800px;
   margin: auto;
@@ -102,7 +102,7 @@ nav button {
 
 .content p {
   font-size: 1.5em;
-  font-family: 'Montserrat';
+  font-family: 'League Spartan', sans-serif;
   margin: 0;
   font-weight: 500;
 }
@@ -115,4 +115,243 @@ nav button {
   position: absolute;
   right: 0;
   bottom: -22%;
+}
+
+.works {
+  margin-top: 10%;
+  background-color: rgba(248, 245, 245, 1);
+}
+
+.works .heading {
+  padding-top: 5%;
+}
+
+.works .steps-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.works .steps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 8%;
+  text-align: center;
+  gap: 7em
+}
+
+.works .steps .heading {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 1.25em;
+}
+
+.works .steps .subheading {
+  max-width: 400px;
+  font-size: 1.125em;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.courses {
+  margin-bottom: 5%;
+}
+
+.courses .courses-content {
+  margin: 0 5%;
+  display: flex;
+  align-items: flex-start;
+  gap: 6em;
+}
+
+.courses .courses-content .control-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.courses .courses-content .control-buttons button {
+  border: 1px solid rgba(0, 80, 236, 1);
+  background-color: white;
+  color: rgba(0, 80, 236, 1);
+  border-radius: 5px;
+  padding: 15px 100px;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'League Spartan', sans-serif;
+}
+
+.courses .courses-content .control-buttons button:hover {
+  background-color: rgba(0, 80, 236, 1);
+  color: white;
+}
+
+.courses .courses-content .logic-pro-cards, .fl-studio-cards {
+  display: flex;
+  gap: 3em;
+}
+
+.courses .courses-content .logic-pro-cards .logic-pro-card, .fl-studio-card {
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #FCFCFC;
+  width: 400px;
+  padding: 30px;
+}
+
+.courses .courses-content .card-heading {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 600;
+  font-size: 1.5em;
+  margin-bottom: 15%;
+}
+
+.courses .courses-content .masterclass, .non-masterclass {
+  font-family: 'League Spartan', sans-serif;
+  line-height: 0.2;
+  font-weight: 600;
+}
+
+.courses .courses-content .masterclass-fee, .non-masterclass-fee {
+  font-family: 'League Spartan', sans-serif;
+  color: rgba(0, 80, 236, 1);
+  font-size: 2.14125em;
+  margin: 0;
+  font-weight: 600;
+}
+
+.card-enrol-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+}
+
+.card-enrol-button button {
+  border: 1px solid rgba(0, 80, 236, 1);
+  background-color: white;
+  color: rgba(0, 80, 236, 1);
+  font-family: 'League Spartan', sans-serif;
+  border-radius: 5px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.card-enrol-button button:hover {
+  background-color: rgba(0, 80, 236, 1);
+  color: white;
+}
+
+.faqs {
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.accordion {
+  margin: 0 5%;
+}
+
+.accordion-content {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2%;
+  border-radius: 10px;
+}
+
+.heading-control p {
+  transition: color 0.2s ease;
+}
+
+.accordion-content .heading-control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 15px;
+  font-family: 'League Spartan', 'sans-serif';
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.accordion-content svg {
+  cursor: pointer;
+}
+
+.accordion-content .faq-answers {
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: 0;
+  padding-bottom: 20px;
+  font-family: 'League Spartan', 'sans-serif';
+}
+
+.faqs .place-left {
+  position: absolute;
+  left: 0;
+  bottom: 5%;
+}
+
+.footer {
+  background-color: #FBFBFB;
+}
+
+.footer-links {
+  margin: 0 5%;
+  padding-top: 3%;
+  display: flex;
+  align-items: flex-start;
+  gap: 15em;
+}
+
+.footer-nav-links {
+  display: flex;
+  gap: 15em;
+}
+
+.footer-nav-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-nav-links ul li {
+  margin-bottom: 10%;
+}
+
+.footer-nav-links ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'League Spartan', 'Sans-serif';
+  color: black;
+  font-weight: 600;
+}
+
+.footer-links .contact-details h6 {
+  margin-top: 0;
+  text-transform: uppercase;
+  font-family: 'League Spartan', 'Sans-serif';
+  font-size: 1em;
+}
+
+.footer-links .contact-details p {
+  font-family: 'League Spartan', 'Sans-serif';
+}
+
+.footer .copyright {
+  margin-left: 5%;
+  margin-right: 5%;
+  padding: 5% 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .copyright p {
+  font-family: 'League Spartan', 'Sans-serif';
+}
+
+.footer .copyright .socials {
+  display: flex;
+  align-items: center;
+  gap: 3em;
 }
