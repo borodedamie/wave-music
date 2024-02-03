@@ -1,6 +1,8 @@
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 function Courses() {
+    const navigate = useNavigate();
     const [selectedMasterclass, setSelectedMasterclass] = useState('logic-pro');
 
     return (
@@ -32,7 +34,7 @@ function Courses() {
                             <p className="non-masterclass">5 months access to the full course</p>
                             <p className="non-masterclass-fee">$119.99</p>
                             <div className='card-enrol-button'>
-                                <button>Enroll Now</button>
+                                <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
                             </div>
                         </div>
                         <div className="logic-pro-card">
@@ -42,7 +44,7 @@ function Courses() {
                             <p className="non-masterclass">5 months access to the full course</p>
                             <p className="non-masterclass-fee">$119.99</p>
                             <div className='card-enrol-button'>
-                                <button>Enroll Now</button>
+                                <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
                             </div>
                         </div>
                     </div>
@@ -56,7 +58,7 @@ function Courses() {
                             <p className="non-masterclass">5 months access to the full course</p>
                             <p className="non-masterclass-fee">$119.99</p>
                             <div className='card-enrol-button'>
-                                <button>Enroll Now</button>
+                                <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
                             </div>
                         </div>
                     </div>

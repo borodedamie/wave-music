@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 function Navbar() {
+    const navigate = useNavigate();
+
     return (
         <header>
             <div className="logo">
@@ -128,7 +132,7 @@ function Navbar() {
                     <li><a href="#">Courses</a></li>
                     <li><a href="#">Contact Us</a></li>
                 </ul>
-                <button>Enroll Now</button>
+                <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
             </nav>
         </header>
     )
