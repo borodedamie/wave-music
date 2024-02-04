@@ -51,7 +51,7 @@ function Courses() {
                 )}
                 {selectedMasterclass === 'fl-studio' && (
                     <div className="fl-studio-cards">
-                        <div className="fl-studio-card">
+                        <div className="fl-studio-card mobile-fl-studio-card">
                             <p className="card-heading">Production Masterclass</p>
                             <p className="masterclass">4 Days masterclass</p>
                             <p className="masterclass-fee">$30.99</p>

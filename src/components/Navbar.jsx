@@ -1,7 +1,10 @@
 import { useNavigate } from 'react-router-dom';
+import { useState } from "react";
 
 function Navbar() {
     const navigate = useNavigate();
+
+    const [isToogle, setIsToogle] = useState(false);
 
     return (
         <header>
@@ -126,7 +129,48 @@ function Navbar() {
                     </defs>
                 </svg>
             </div>
-            <nav>
+            <div className="toogle-button-div">
+                <a href="#" className="toogle-button" onClick={() => setIsToogle(!isToogle)}>
+                    {isToogle ? (
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            x="0px"
+                            y="0px"
+                            width={40}
+                            height={40}
+                            viewBox="0,0,256,256"
+                        >
+                            <g
+                                fill="rgba(0, 80, 236, 1)"
+                                fillRule="nonzero"
+                                stroke="none"
+                                strokeWidth={1}
+                                strokeLinecap="butt"
+                                strokeLinejoin="miter"
+                                strokeMiterlimit={10}
+                                strokeDasharray=""
+                                strokeDashoffset={0}
+                                fontFamily="none"
+                                fontWeight="none"
+                                fontSize="none"
+                                textAnchor="none"
+                                style={{ mixBlendMode: "normal" }}
+                            >
+                                <g transform="scale(5.12,5.12)">
+                                    <path d="M9.15625,6.3125l-2.84375,2.84375l15.84375,15.84375l-15.9375,15.96875l2.8125,2.8125l15.96875,-15.9375l15.9375,15.9375l2.84375,-2.84375l-15.9375,-15.9375l15.84375,-15.84375l-2.84375,-2.84375l-15.84375,15.84375z" />
+                                </g>
+                            </g>
+                        </svg>
+                    ) : (
+                        <>
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                            <span className="bar"></span>
+                        </>
+                    )}
+                </a>
+            </div>
+            <nav className={`nav-menu ${isToogle ? 'show-menu' : ''}`}>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Courses</a></li>

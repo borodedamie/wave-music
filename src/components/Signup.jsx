@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 function Signup() {
+    const navigate = useNavigate();
+
     return (
         <div className="signup">
             <div className="signup-heading">
@@ -62,12 +66,12 @@ function Signup() {
                     </div>
                 </div>
                 <div className="input-group-grid">
-                    <div className="">
+                    <div className="radio-input-group">
                         <input type="radio" name="masterclass" />
                         <label htmlFor="masterclass">4 days masterclass</label>
                         <p>$30.99</p>
                     </div>
-                    <div className="">
+                    <div className="radio-input-group">
                         <input type="radio" name="full_course" />
                         <label htmlFor="full-course">5 months access to the full course</label>
                         <p>$119.99</p>
@@ -75,7 +79,7 @@ function Signup() {
                 </div>
                 <div className="submit-button-div">
                     <button type="submit">Proceed To Payment</button>
-                    <a href="#">Back to home</a>
+                    <a onClick={() => navigate('/')}>Back to home</a>
                 </div>
             </form>
         </div>

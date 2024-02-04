@@ -1,5 +1,5 @@
 #root {
-  max-width: calc(100% - 5px);
+  max-width: 100vw;
   margin: 0;
 }
 
@@ -41,6 +41,35 @@ nav button {
   font-family: 'League Spartan', sans-serif;
   cursor: pointer;
 }
+
+.nav-menu {
+  display: flex;
+}
+
+.toogle-button {
+  position: absolute;
+  top: 2em;
+  right: 1em;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toogle-button .bar {
+  display: inline-block;
+  height: 3px;
+  width: 100%;
+  background-color: rgba(0, 80, 236, 1);
+  border-radius: 10px;
+}
+
+.toogle-button span,
+.toogle-button svg {
+  transition: opacity 2s ease;
+}
+
 
 .hero {
   background-image: url('../src/assets/hero-bg-img.svg');
@@ -188,12 +217,14 @@ nav button {
   color: white;
 }
 
-.courses .courses-content .logic-pro-cards, .fl-studio-cards {
+.courses .courses-content .logic-pro-cards,
+.fl-studio-cards {
   display: flex;
   gap: 3em;
 }
 
-.courses .courses-content .logic-pro-cards .logic-pro-card, .fl-studio-card {
+.courses .courses-content .logic-pro-cards .logic-pro-card,
+.fl-studio-card {
   border-radius: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   background-color: #FCFCFC;
@@ -208,13 +239,15 @@ nav button {
   margin-bottom: 15%;
 }
 
-.courses .courses-content .masterclass, .non-masterclass {
+.courses .courses-content .masterclass,
+.non-masterclass {
   font-family: 'League Spartan', sans-serif;
   line-height: 0.2;
   font-weight: 600;
 }
 
-.courses .courses-content .masterclass-fee, .non-masterclass-fee {
+.courses .courses-content .masterclass-fee,
+.non-masterclass-fee {
   font-family: 'League Spartan', sans-serif;
   color: rgba(0, 80, 236, 1);
   font-size: 2.14125em;
@@ -401,27 +434,66 @@ nav button {
   padding: 10px;
   width: 100%;
   border: 1px solid white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   margin-bottom: 5%;
+}
+
+.input-group input::placeholder {
+  font-family: 'League Spartan', 'Sans-serif';
+  font-weight: 400;
+  padding: 15px;
 }
 
 .input-group select {
   width: 105%;
   border: none;
   border: 1px solid white;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.1);
   padding: 15px;
   border-radius: 10px;
 }
 
+.input-group input[type="date"] {
+  padding: 15px;
+}
+
 .input-group label {
-  position: absolute; 
-  top: -35px; 
-  left: 1px; 
-  font-size: 18px; 
+  position: absolute;
+  top: -35px;
+  left: 1px;
+  font-size: 18px;
   margin-bottom: 5%;
-  font-weight: 500;
+  font-weight: 600;
+}
+
+.radio-input-group {
+  border: 2px solid rgba(0, 80, 236, 1);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.radio-input-group label {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.radio-input-group input[type="radio"]+label {
+  margin-left: 10px;
+}
+
+.radio-input-group input[type="radio"]:checked {
+  background-color: rgba(0, 80, 236, 1);
+}
+
+.radio-input-group p {
+  color: rgba(0, 80, 236, 1);
+  font-weight: 700;
+  margin-left: 6%;
+  font-size: 2em;
+  line-height: 0;
+  margin-bottom: 10%;
 }
 
 .submit-button-div {
@@ -429,7 +501,9 @@ nav button {
   justify-content: center;
   align-items: center;
   margin-top: 5%;
-  gap: 3em;
+  padding-bottom: 15%;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .submit-button-div button {
@@ -438,5 +512,216 @@ nav button {
   color: white;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 10px 90px;
+  padding: 13px 90px;
+  cursor: pointer;
+}
+
+.submit-button-div button:hover {
+  background-color: white;
+  border: 1px solid rgba(0, 80, 236, 1);
+  color: rgba(0, 80, 236, 1);
+}
+
+.submit-button-div a {
+  color: rgba(0, 80, 236, 1);
+}
+
+@media screen and (max-width: 768px) {
+  .toogle-button {
+    display: flex;
+  }
+
+  .logo svg {
+    width: 15vw;
+  }
+
+  .hero {
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: auto;
+    height: 80vh;
+  }
+
+  .hero h1 {
+    font-size: 2.5em;
+    width: 80vw;
+    margin: auto;
+    padding-bottom: 5%;
+    padding-top: 30%;
+  }
+
+  .hero p {
+    font-size: 0.8em;
+    width: 85vw;
+    padding-bottom: 10%;
+  }
+
+  .hero button {
+    font-size: 0.8em;
+  }
+
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-menu.show-menu {
+    display: flex;
+  }
+
+  .heading {
+    margin: 15% 5%;
+  }
+
+  .heading h6 {
+    font-size: 1.5em;
+  }
+
+  .content img {
+    width: 75vw;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+
+  .about .place-right {
+    bottom: -11%;
+    width: 5vw;
+  }
+
+  .works .heading {
+    padding-top: 15%;
+    margin: auto 5%;
+  }
+
+  .works .steps-image {
+    display: none;
+  }
+
+  .works .steps {
+    flex-direction: column;
+    gap: 0;
+    align-items: flex-start;
+    justify-content: flex-start;
+    text-align: left;
+    padding-bottom: 15%
+  }
+
+  .works .steps .heading {
+    margin: 0 5%;
+    font-size: 1.2em;
+  }
+
+  .works .steps .subheading {
+    margin: 2% 5%;
+    font-size: 1em;
+    width: 90%;
+  }
+
+  .courses .courses-content {
+    flex-direction: column;
+  }
+
+  .courses .courses-content .control-buttons button {
+    width: 118%;
+  }
+
+  .courses .courses-content .logic-pro-cards,
+  .fl-studio-cards {
+    flex-direction: column;
+  }
+
+  .courses .courses-content .logic-pro-cards .logic-pro-card {
+    width: auto;
+  }
+
+  .mobile-fl-studio-card {
+    width: 105%;
+  }
+
+  .accordion-content .heading-control {
+    font-size: 1rem;
+  }
+
+  .accordion {
+    margin: 10% 5%;
+  }
+
+  .accordion-content svg {
+    width: 5vw;
+  }
+
+  .faqs .place-left {
+    display: none;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 2em;
+  }
+
+  .footer-nav-links {
+    gap: 1.5em;
+  }
+
+  .logo svg {
+    width: 20vw;
+    padding-top: 10%;
+  }
+
+  .footer .copyright {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding-bottom: 10%;
+  }
+
+  .signup {
+    margin: 15% 0;
+  }
+
+  .signup-heading h3 {
+    max-width: 80vw;
+    margin: auto;
+  }
+
+  .signup-heading p {
+    max-width: 80vw;
+    margin: auto;
+    font-size: 1em;
+    padding: 5% 0;
+  }
+
+  .enroll-now-form {
+    max-width: 90vw;
+    margin: 15% auto;
+  }
+
+  .input-group input {
+    width: 95%;
+  }
+
+  .input-group-grid {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .input-group select {
+    width: 102%;
+  }
+
+  .input-group input[type="date"] {
+    width: 92%;
+  }
+
+  .input-group-grid .radio-input-group {
+    width: 92%;
+    margin-bottom: 5%;
+  }
 }
