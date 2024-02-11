@@ -1,8 +1,6 @@
 #root {
   max-width: 100vw;
   margin: 0;
-  --background-color: white;
-  --text-color: black;
 }
 
 header {
@@ -27,7 +25,7 @@ nav ul {
 
 nav ul a {
   text-decoration: none;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   color: black;
   font-weight: 600;
   font-size: 1.25em;
@@ -40,7 +38,7 @@ nav button {
   border-radius: 5px;
   padding: 10px 30px;
   font-size: 1.25em;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   cursor: pointer;
 }
 
@@ -82,7 +80,7 @@ nav button {
 
 .hero h1 {
   color: white;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   font-size: 4em;
   max-width: 800px;
   margin: auto;
@@ -92,7 +90,7 @@ nav button {
 
 .hero p {
   color: white;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   font-size: 1.5em;
   max-width: 800px;
   margin: auto;
@@ -134,7 +132,7 @@ nav button {
 
 .content p {
   font-size: 1.5em;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   margin: 0;
   font-weight: 500;
 }
@@ -175,7 +173,7 @@ nav button {
 }
 
 .works .steps .heading {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   font-weight: 700;
   font-size: 1.25em;
 }
@@ -183,7 +181,7 @@ nav button {
 .works .steps .subheading {
   max-width: 400px;
   font-size: 1.125em;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
 }
 
 .courses {
@@ -211,7 +209,7 @@ nav button {
   padding: 15px 100px;
   font-weight: 600;
   cursor: pointer;
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
 }
 
 .courses .courses-content .control-buttons button:hover {
@@ -235,7 +233,7 @@ nav button {
 }
 
 .courses .courses-content .card-heading {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   font-weight: 600;
   font-size: 1.5em;
   margin-bottom: 15%;
@@ -243,14 +241,14 @@ nav button {
 
 .courses .courses-content .masterclass,
 .non-masterclass {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   line-height: 0.2;
   font-weight: 600;
 }
 
 .courses .courses-content .masterclass-fee,
 .non-masterclass-fee {
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   color: rgba(0, 80, 236, 1);
   font-size: 2.14125em;
   margin: 0;
@@ -268,7 +266,7 @@ nav button {
   border: 1px solid rgba(0, 80, 236, 1);
   background-color: white;
   color: rgba(0, 80, 236, 1);
-  font-family: 'League Spartan', sans-serif;
+  font-family: 'League Spartan', 'sans-serif';
   border-radius: 5px;
   padding: 10px 40px;
   cursor: pointer;
