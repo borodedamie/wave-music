@@ -23,7 +23,7 @@ function Courses() {
             <div className="courses-content">
                 <div className="control-buttons">
                     <button onClick={() => setSelectedMasterclass('logic-pro')}>Logic Pro Masterclass</button>
-                    <button onClick={() => setSelectedMasterclass('fl-studio')}>FL Studio Masterclass</button>
+                    {/* <button onClick={() => setSelectedMasterclass('fl-studio')}>FL Studio Masterclass</button> */}
                 </div>
                 {selectedMasterclass === 'logic-pro' && (
                     <div className="logic-pro-cards">
