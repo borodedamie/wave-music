@@ -13,56 +13,60 @@ function Signup() {
             <form className="enroll-now-form">
                 <div className="input-group-grid">
                     <div className="input-group">
-                        <input type="text" name="first_name" placeholder="Input name" />
-                        <label htmlFor="first-name">First Name</label>
+                        <input type="text" name="full_name" placeholder="Input name" />
+                        <label htmlFor="full-name">Full Name</label>
                     </div>
                     <div className="input-group">
-                        <input type="text" name="last_name" placeholder="Input name" />
-                        <label htmlFor="last-name">Last Name</label>
+                        <input type="text" name="state" placeholder="Input state" />
+                        <label htmlFor="state">State</label>
                     </div>
                 </div>
                 <div className="input-group-grid">
-                    <div className="input-group">
-                        <input type="date" name="date_of_birth" />
-                        <label htmlFor="date-of-birth">Date of Birth</label>
-                    </div>
                     <div className="input-group">
                         <input type="email" name="email_address" placeholder="Input email" />
                         <label htmlFor="email-address">Email Address</label>
                     </div>
-                </div>
-                <div className="input-group-grid">
                     <div className="input-group">
                         <input type="text" name="telephone" placeholder="Input telephone number" />
-                        <label htmlFor="telephone-number">Telephone Number</label>
-                    </div>
-                    <div className="input-group">
-                        <select name="location">
-                            <option value="">Select Country</option>
-                            <option value="nigeria">Nigeria</option>
-                            <option value="usa">USA</option>
-                        </select>
-                        <label htmlFor="location">Location</label>
+                        <label htmlFor="telephone-number">Mobile Number</label>
                     </div>
                 </div>
                 <div className="input-group-grid">
+                    <div className="input-group">
+                        {/* <input type="date" name="date_of_birth" /> */}
+                        <select name="logic_or_not">
+                            <option value="">Select Yes or No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <label htmlFor="logic-or-not">Have you ever used logic?</label>
+                    </div>
+                    <div className="input-group">
+                        <select name="logic_or_not">
+                            <option value="">Select Yes or No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <label htmlFor="logic-or-not">Do you play any musical instrument?</label>
+                    </div>
+                </div>
+                <div className="input-group-grid">
+                    <div className="input-group">
+                        <select name="logic_or_not">
+                            <option value="">Select Yes or No</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                        <label htmlFor="logic-or-not">Are you new to this?</label>
+                    </div>
                     <div className="input-group">
                         <select name="knowledge">
                             <option value="">Select</option>
-                            <option value="fl">Fl Studio</option>
-                            <option value="logic">Logic Pro</option>
+                            {/* <option value="fl">Fl Studio</option> */}
+                            <option value="production">Production</option>
                             <option value="mixing_n_mastering">Mixing & Mastering</option>
                         </select>
                         <label htmlFor="knowledge">Existing Course Knowledge</label>
-                    </div>
-                    <div className="input-group">
-                        <select name="skill_level">
-                            <option value="">Select</option>
-                            <option value="beginner">Beginner</option>
-                            <option value="intermediate">Intermediate</option>
-                            <option value="professional">Professional</option>
-                        </select>
-                        <label htmlFor="location">Your skill level</label>
                     </div>
                 </div>
                 <div className="input-group-grid">
@@ -73,8 +77,8 @@ function Signup() {
                     </div>
                     <div className="radio-input-group">
                         <input type="radio" name="full_course" />
-                        <label htmlFor="full-course">5 months access to the full course</label>
-                        <p>$119.99</p>
+                        <label htmlFor="full-course">4 months access to the full course</label>
+                        <p>$100.99</p>
                     </div>
                 </div>
                 <div className="submit-button-div">

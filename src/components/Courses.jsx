@@ -31,8 +31,8 @@ function Courses() {
                             <p className="card-heading">Mixing and Mastering Masterclass</p>
                             <p className="masterclass">4 Days masterclass</p>
                             <p className="masterclass-fee">$30.99</p>
-                            <p className="non-masterclass">5 months access to the full course</p>
-                            <p className="non-masterclass-fee">$119.99</p>
+                            <p className="non-masterclass">4 months access to the full course</p>
+                            <p className="non-masterclass-fee">$100.99</p>
                             <div className='card-enrol-button'>
                                 <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
                             </div>
@@ -41,8 +41,8 @@ function Courses() {
                             <p className="card-heading">Production Masterclass</p>
                             <p className="masterclass">4 Days masterclass</p>
                             <p className="masterclass-fee">$30.99</p>
-                            <p className="non-masterclass">5 months access to the full course</p>
-                            <p className="non-masterclass-fee">$119.99</p>
+                            <p className="non-masterclass">4 months access to the full course</p>
+                            <p className="non-masterclass-fee">$100.99</p>
                             <div className='card-enrol-button'>
                                 <button onClick={() => navigate('/enroll-now')}>Enroll Now</button>
                             </div>

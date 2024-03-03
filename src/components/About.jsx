@@ -1,4 +1,4 @@
-import AboutImg from "../assets/about-image.svg";
+import AboutImg from "../assets/about-image.webp";
 
 function About() {
     return (
@@ -17,7 +17,7 @@ function About() {
                 </svg>
             </div>
             <div className="content">
-                <img src={AboutImg} alt="about image" />
+                <img src={AboutImg} alt="about image" width={500} />
                 <p>
                     <span className="bold">Walitali</span> is a top-tier music producer and the brains behind Wave
                     Music Digital Academy. With decades in the game, he's worked
