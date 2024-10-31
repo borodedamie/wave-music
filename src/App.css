@@ -23,12 +23,13 @@ nav ul {
   align-items: center;
 }
 
-nav ul a {
+nav ul li {
   text-decoration: none;
   font-family: 'League Spartan', 'sans-serif';
   color: black;
   font-weight: 600;
   font-size: 1.25em;
+  cursor: pointer;
 }
 
 nav button {
