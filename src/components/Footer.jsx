@@ -141,7 +141,7 @@ function Footer() {
                 </div>
                 <div className="contact-details">
                     <h6>Contact Us</h6>
-                    <p>+2348134669034, +234585690329</p>
+                    <p>+2349037058728</p>
                     <p>The content place, Ikate Eleghushi, Lekki, <br />
                         Lagos State.</p>
                 </div>
